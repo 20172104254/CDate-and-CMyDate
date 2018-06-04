@@ -50,9 +50,9 @@ public:
 		day = td;
 		cout << "派生类构造函数" << year << "年" << month << "月" << day << "日" << endl;
 	}
-	CMyDate()
+	~CMyDate()
 	{
-		cout << "派生类构造函数" << year << "年" << month << "月" << day << "日" << endl;
+		cout << "派生类析构函数" << year << "年" << month << "月" << day << "日" << endl;
 	}
 };
 
@@ -61,8 +61,6 @@ int main()
 {
 	//CMyDate orect1;
 	//orect1.display();
-	CMyDate orect3;
-	orect3.display();
 	CMyDate orect(2018,6,4);
 	orect.display();
 	CDate orect2(2035, 1, 1);
